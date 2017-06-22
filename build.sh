@@ -10,8 +10,6 @@
 
 readarray -t buildName < <(grep '"' build-config.json | cut -d '"' -f4)
 
-echo ${buildName[-1]}
-
 #Dispaly all the value in the array
 #echo ${buildName[@]}
 
