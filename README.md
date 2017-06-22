@@ -2,7 +2,7 @@
 
 Building sass with ruby without the need to remember the sass commands and folder path and automating the main.css overrides.
 
-This bash script will only working on screendragon unity configured machines.
+This bash script will only work on screendragon configured machine.
 
 It's reccomended to run this on a `Visual studio code` editor on a bash command line.
 
@@ -20,8 +20,8 @@ Example:
 ```
 
 Also you need to set the main css file path, if you want the script to override it for you.
-Just add you path to the last line of the `build-config.json` file.
-If you want to set it manually each time just comment out last line in build-config.json
+Just add you path in `build-config.json` file.
+If you want to set it manually each time just comment out last line in `build-config.json`.
 
 ```json
 "main-css-path": ["C:/your/path/here"]
@@ -31,7 +31,8 @@ If you want to set it manually each time just comment out last line in build-con
 
 1. Copy the `build.sh` into the main project folder as well as build-config.json, make sure they are in the same directory.
 2. Open a bash console on the main project folder and run `./build.sh`.
-3. The script will run and show you 3 simple step to follow.
+3. The script will run.
+4. Just follow the suggested step by the script.
 
 
 
