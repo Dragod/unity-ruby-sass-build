@@ -38,7 +38,7 @@ GREEN=`tput setaf 2`
 
 NC='\033[0m'
 
-#Declare a variable choice and assing a value
+#Declare a variable choice and assign a value
 
 choice=4
 
