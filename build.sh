@@ -24,12 +24,12 @@ SPTH=${buildName[-1]}
 
 #Declare colors, this only work with printf method not echo
 
+#Red
 RED='\033[0;31m'
-
-# No Color
-
-NC='\033[0m'
+#Green
 GREEN=`tput setaf 2`
+# No Color
+NC='\033[0m'
 
 #Declare a variable choice and assing a value
 
