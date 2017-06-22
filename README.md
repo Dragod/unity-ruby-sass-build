@@ -21,6 +21,7 @@ Example:
 
 Also you need to set the main css file path, if you want the script to override it for you.
 Just add you path to the last line of the `build-config.json` file.
+If you want to set it manually each time just comment out last line in build-config.json
 
 ```json
 "main-css-path": ["C:/your/path/here"]
