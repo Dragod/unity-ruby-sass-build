@@ -11,9 +11,11 @@
 readarray -t buildName < <(grep '"' build-config.json | cut -d '"' -f4)
 
 #Dispaly all the value in the array
+
 #echo ${buildName[@]}
 
 #Display array length
+
 #echo ${#buildName[@]}
 
 #Define path to file
@@ -25,10 +27,15 @@ SPTH=${buildName[-1]}
 #Declare colors, this only work with printf method not echo
 
 #Red
+
 RED='\033[0;31m'
+
 #Green
+
 GREEN=`tput setaf 2`
+
 # No Color
+
 NC='\033[0m'
 
 #Declare a variable choice and assing a value
@@ -76,9 +83,11 @@ print_menu
          printf "${GREEN}Rewrite @import in main.css with $setBrand, path: $SPTH ${NC}\n\n"
 
          #Override the main.css
+
          echo "@import url(\"../css/skins/$setBrand/$setBrand.css\");" >${SPTH}/main.css
 
          #Evaluate the sass build command in the console
+
          eval $buildBrand
 
      fi
@@ -97,6 +106,7 @@ print_menu
      else
 
      if [ $choice -eq 2 ] ; then
+
          printf "\n${GREEN}Number of skin:${NC} ${#buildName[@]}\n"
          printf "\n${GREEN}Available build name:${NC}\n\n"
          printf '%s\n' "${buildName[@]}"
@@ -123,6 +133,8 @@ print_menu
          fi
      fi
      #
+
    #End while loop
+   
    fi
  done
