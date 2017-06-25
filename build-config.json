@@ -1,6 +1,4 @@
 {
-    // Add skin/s below
-
     "amazon-site":["amazon-site"],
     "amazon-site-lite":["amazon-site-lite"],
     "kellogg":["kellogg"],
@@ -25,14 +23,5 @@
     "bp":["bp"],
     "bpgwo":["bpgwo"],
     "bp-speakers":["bp-speakers"],
-
-
-    // Make sure "main-css-path" is always the last json value or it will be ignored.
-    // This could be done different but it's a quick fix to read everything in just one array.
-    // Any skin file goes above it
-
-    // Define the path to your main.css, if this is incorrect you will recive an error in the // console while running the script: "No such file or directory".
-    // If you want to change your main.css manually, just comment this out.
-
     "main-css-path": ["C:/gitrepos/sd-unity/css"]
 }
