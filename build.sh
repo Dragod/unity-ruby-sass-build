@@ -1,14 +1,22 @@
 #!/bin/bash
 
-#Building a script that compile SCSS for unity builds
+#Building a script that compile SCSS for unity builds, please read repo dpc here: 
 #Author: Fabio Paniconi 30.05.2017
-#Version: 2.0.0
-#Revision: 22.06.2017
+#Version: 3.0.0
+#Revision: 25.06.2017
 # To run the script just type "./build.sh" in a bash terminal on visual studio code, just make sure you are in the main unity folder (Ex: C:\gitrepos\sd-unity>) or whatever is your folder.
 
 #Create array from json file build-config.json, this file need to be in the same directory as build.sh
 
 readarray -t buildName < <(grep '"' build-config.json | cut -d '"' -f4)
+
+#Removing last value of the build array so it doesn't show the path
+
+unset 'buildName[${#buildname[@]}-1]'
+
+#Creating a new array from build-config.json for the main.css path only
+
+readarray -t pathName < <(grep '"' build-config.json | cut -d '"' -f4)
 
 #Dispaly all the value in the array
 
@@ -20,9 +28,9 @@ readarray -t buildName < <(grep '"' build-config.json | cut -d '"' -f4)
 
 #Define path to file
 # If you want to automate your main css as well you need to point to the right folder.
-# ${buildName[-1]} get the last element in the array so make sure this value is always last one in your build-config.json.
+# ${pathName[-1]} get the last element in the array so make sure this value is always last one in your build-config.json.
 
-SPTH=${buildName[-1]}
+SPTH=${pathName[-1]}
 
 #Declare colors, this only work with printf method not echo
 
@@ -135,6 +143,6 @@ print_menu
      #
 
    #End while loop
-   
+
    fi
  done
