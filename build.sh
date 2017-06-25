@@ -118,9 +118,9 @@ print_menu
 
      if [ $choice -eq 2 ] ; then
 
-         printf "\n${GREEN}Number of skin:${NC} ${#buildName[@]}\n"
          printf "\n${GREEN}Available build name:${NC}\n\n"
          printf '%s\n' "${buildName[@]}"
+         printf "\n${GREEN}Skins:${NC} ${#buildName[@]}\n"
          echo ""
          read -n 1 -s -p "Press any key to continue..."
          echo ""
