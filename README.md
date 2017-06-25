@@ -34,7 +34,7 @@ If you want to set the main.css manually each time just comment out last line in
 
 ## How to use build.sh
 
-1. Copy the `build.sh` into the main project folder as well as build-config.json, make sure they are in the same directory.
+1. Copy the `build.sh` into the main project folder as well as `build-config.json`, make sure they are in the same directory.
 2. Open a bash console on the main project folder and run `./build.sh`.
 3. The script will run.
 4. Just follow the suggested step by the script.
