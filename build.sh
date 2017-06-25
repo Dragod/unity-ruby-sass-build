@@ -1,9 +1,12 @@
 #!/bin/bash
 
-#Building a script that compile SCSS for unity builds, please read repo dpc here: 
-#Author: Fabio Paniconi 30.05.2017
-#Version: 3.0.0
+#Building a script that compile SCSS for unity builds, please read repo dpc here:  
+#https://github.com/Dragod/unity-ruby-sass-build
+#Author: Fabio Paniconi 
+#Created: 30.05.2017
 #Revision: 25.06.2017
+#Version: 3.0.0
+
 # To run the script just type "./build.sh" in a bash terminal on visual studio code, just make sure you are in the main unity folder (Ex: C:\gitrepos\sd-unity>) or whatever is your folder.
 
 #Create array from json file build-config.json, this file need to be in the same directory as build.sh
