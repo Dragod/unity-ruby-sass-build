@@ -21,11 +21,16 @@ Example:
 
 Also you need to set the main css file path, if you want the script to override it for you.
 Just add you path in `build-config.json` file.
-If you want to set it manually each time just comment out last line in `build-config.json`.
+
+Example:
 
 ```json
 "main-css-path": ["C:/your/path/here"]
 ```
+
+> Please make sure that `"main-css-path": ["C:/your/path/here"]` is the last line of your `build-config.json`  or it will return an error while you try to run the script.
+
+If you want to set the main.css manually each time just comment out last line in `build-config.json`.
 
 ## How to use build.sh
 
