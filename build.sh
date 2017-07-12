@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Building a script that compile SCSS for unity builds, please read repo dpc here:  
+#Building a script that compile SCSS for unity builds, please read repo doc here:  
 #https://github.com/Dragod/unity-ruby-sass-build
 #Author: Fabio Paniconi 
 #Created: 30.05.2017
